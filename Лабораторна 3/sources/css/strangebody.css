@@ -3,7 +3,7 @@ body
   padding: 0px;
   margin: 0px;
   font-size: .78em;
-  background: #090708;
+  background: #1104;
   color: #5D5D5D;}
 
 p
@@ -82,8 +82,13 @@ ol li
 #main
 { padding-bottom: 40px;}
 
+#iconmini
+{ width:20px;
+  height:auto;
+  float: none;}
+
 #header
-{ background: transparent url(logo.jpg) no-repeat;
+{ background: transparent url(../resources/logo.jpg) no-repeat;
   background-size: 100% auto;}
 
 #logo
