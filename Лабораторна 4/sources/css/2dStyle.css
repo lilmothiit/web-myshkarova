@@ -1,0 +1,19 @@
+#div2d
+{ margin: 100px auto;
+  width: 400px;
+  height: 300px;
+  background: linear-gradient(124deg, #350142, #051545, #170266, #fab48c, #f6dde8);
+  background-size: 2000% 2000%;
+  transform: scale(1.5); }
+
+.ellipce
+{ transition-duration : 3s;
+  transition-timing-function : ease-in-out;
+  animation: rainbow 18s ease infinite;}
+
+@keyframes rainbow
+{
+  0%{background-position:0% 92%}
+  50%{background-position:100% 9%}
+  100%{background-position:0% 92%}
+}
