@@ -1,0 +1,26 @@
+.circle{
+  width: 250px;
+  height: 250px;
+  margin: 50px auto;
+  background: linear-gradient(124deg, #350142, #051545, #170266, #fab48c, #f6dde8);
+  background-size: 2000% 2000%;
+  border-radius: 50%;
+  transition: 0.25s cubic-bezier(0,0.7,0.9,1);
+  animation: rainbow 18s ease infinite;
+}
+
+.circle:hover{
+  transform: scale(1.2);
+  transition-timing-function: cubic-bezier(0,0.7,0.9,1);
+  transition: 0.25s ease;
+}
+
+
+@keyframes rainbow
+{
+  0%  {background-position: 0%   70%}
+  11% {background-position: 30%  60%}
+  50% {background-position: 100% 30%}
+  89% {background-position: 70%  40%}
+  100%{background-position: 0%   70%}
+}
