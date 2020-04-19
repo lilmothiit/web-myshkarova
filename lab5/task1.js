@@ -50,7 +50,7 @@ function TestLogger(human) {
   console.log(GetFiscalCode(human));
 }
 
-TestLogger(new Person("Matt", "Edabit", "M", "1/1/1900"));			//dbtmtt00a01
-TestLogger(new Person("Helen", "Yu", "F", "1/12/1950"));			//yuxhln50t41
-TestLogger(new Person("Sam", "Newmenn", "M", "21/5/1728"));			//nmnsma28e05
+TestLogger(new Person("Matt", "Edabit", "M", "1/1/1900"));		//dbtmtt00a01
+TestLogger(new Person("Helen", "Yu", "F", "1/12/1950"));		//yuxhln50t41
+TestLogger(new Person("Sam", "Newmenn", "M", "21/5/1728"));		//nmnsma28e05
 TestLogger(new Person("Cassandra", "Comenada", "F", "08/11/2001"))	//cndcsn01s48
