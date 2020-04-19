@@ -1,28 +1,23 @@
-function JoinWithOverlap(words)
+function joinWithOverlap(words)
 {
-	var overlap = 100;
+	var minoverlap = 100;
+	var result = words[0];
+
 	for(var i = 1; i < words.length; i++)
 	{
-		var j = 0;
-		while(words[i-1][-j] == words[i][j]) j++;
-		if (j < overlap) overlap = j;
-	}
+		var j = 1;
+		//console.log(words[i-1],": ",words[i].slice(0,j));
+		while (!words[i-1].endsWith(words[i].slice(0,j))) j++;
+		if (j < minoverlap) minoverlap = j;
 
-	var result = "";
-	for word in words
-	{
-		if
-		result.slice(,-overlap);
-		result += word;
+		result = result.slice(0,-j);
+		result += words[i];
 	}
-	return [result, overlap];
+	//console.log("overlap = ",overlap);
+
+	return [result, minoverlap];
 }
 
-console.log(JoinWithOverlap(["oven", "envier", "erase", "serious"]));
-console.log(JoinWithOverlap(["move", "over", "very"]));
-console.log(JoinWithOverlap(["oven", "envier", "erase", "serious"]));
-) ➞ ["ovenvieraserious", 2]
-
-join() ➞ ["movery", 3]
-
-join(["to", "ops", "psy", "syllable"]) ➞ ["topsyllable", 1]
+console.log(joinWithOverlap(["oven", "envier", "erase", "serious"]));
+console.log(joinWithOverlap(["move", "over", "very"]));
+console.log(joinWithOverlap(["to", "ops", "psy", "syllable"]));
