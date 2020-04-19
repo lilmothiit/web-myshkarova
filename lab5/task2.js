@@ -10,10 +10,10 @@ function isWristband(b)
 	{
 		//console.log(i);
 		for (var j = 0; j < blen; j++)
-    	{
+		{
 			//console.log("	",j);
 			if((j>0) && (row === true) && (b[i][j] !== b[i][j-1])) row = false;
-    		if((i>0) && (col === true) && (b[i][j] !== b[i-1][j])) col = false;
+			if((i>0) && (col === true) && (b[i][j] !== b[i-1][j])) col = false;
 			if((diagr === true) && (b[i][j] !== b[j][i])) diagr = false;
 			if((i>0 && j>0) && (diagl === true) && (b[i][j] !== b[i-1][j-1])) diagl = false;
 		}
